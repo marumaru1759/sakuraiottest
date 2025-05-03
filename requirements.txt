@@ -1,0 +1,4 @@
+fastapi[all]==0.115.9
+gunicorn==23.0.0
+uvicorn[standard]==0.34.0
+
