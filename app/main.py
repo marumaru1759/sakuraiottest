@@ -7,6 +7,6 @@ app = FastAPI()
 @app.post("/api")
 async def api_handler(request: Request):
     body = await request.json()
-    print("Recieved JSON Data:", body)
+    #print("Recieved JSON Data:", body)
     #return JSONResponse(content={"message": "ok"})
     return {"received": body}
