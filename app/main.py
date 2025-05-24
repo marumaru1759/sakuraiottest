@@ -4,6 +4,11 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
+class Location(BaseModel):
+    latitude: float
+    longitude: float
+    timestamp: str
+
 @app.post("/api")
 async def api_handler(request: Request):
     body = await request.json()
